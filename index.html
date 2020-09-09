@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <p>Compete against the computer in a game of Rock Paper Scissors!</p>
+        <div class="game panel">
+            <h2 class="user-title">You</h2>
+            <h2 class="comp-title">Computer</h2>
+            <div class="user">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+            <div class="computer">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+            </div>
+            <div class="user-score">0</div>
+            <div class="computer-score">0</div>
+            <p class="output">It is <strong>your</strong> turn!</p>
+        </div>
+
+        <div class="input">
+            <button class="panel option" id="rock">
+                <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+            </button>
+            <button class="panel option" id="paper">
+                <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            </button>
+            <button class="panel option" id="scissors">
+                <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="blur-background menu">
+        <div class="panel">
+            <h1>Rock, Paper, Scissors</h1>
+            <p class="message">
+                Rock beats scissors, scissors beats paper, paper beats rock. 
+                Choose either rock, paper or scissors and try to beat the 
+                computer!
+            </p>
+            <p class="retry">Press the play button to start.</p>
+            <button class="play">
+                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

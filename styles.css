@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  margin: 50px 0 10px 0;
+  font-size: 32px;
+}
+
+p {
+  margin: 20px 0;
+}
+
+.container {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.game {
+  display: grid;
+  padding: 30px 50px 10px 50px;
+  width: 100%;
+  grid-template-columns: 200px 50px 200px;
+  grid-template-areas: "usertitle . comptitle"
+                       "user      .   computer"
+                       "userscore . compscore"
+                       "output output output";
+  justify-content: center;
+}
+
+.user-title {
+  grid-area: usertitle;
+  text-align: center;
+}
+
+.comp-title {
+  grid-area: comptitle;
+  text-align: center;
+
+}
+
+.user {
+  grid-area: user;
+}
+
+.computer {
+  grid-area: computer;
+}
+
+.user, .computer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+
+.user i, .computer i {
+  font-size: 96px;
+  color: rgb(96, 178, 255);
+}
+
+.output {
+  grid-area: output;
+  font-style: italic;
+  margin: 15px 0 20px 0;
+}
+
+
+.panel {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+.input button {
+  border: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 50%;
+}
+
+.input button:focus {
+  outline: none;
+}
+
+.input i {
+  display: block;
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
+  color: rgb(96, 178, 255);
+}
+
+.input i:hover {
+  color: rgb(0, 132, 255);
+}
+
+.user-score {
+  grid-area: userscore;
+}
+
+.computer-score {
+  grid-area: compscore;
+}
+
+.user-score, .computer-score {
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.blur-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(6px);
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.play i {
+  display: block;
+  font-size: 128px;
+  width: 128px;
+  height: 128px;
+  color: rgb(0, 132, 255);
+}
+
+.play {
+  border: none;
+  box-shadow: none;
+  background-color: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play:focus {
+  outline: none;
+}
+
+.play:hover {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.menu .panel {
+  margin: 0 auto;
+  display: block;
+  width: 550px;
+  height: 350px;
+  margin-top: 180px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu p {
+  margin: 0 30px 20px 30px;
+}
+
+.menu h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
