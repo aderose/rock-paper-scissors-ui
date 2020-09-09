@@ -61,7 +61,7 @@ function playRound(option, scores, output, userScoreTag, compScoreTag) {
     compScoreTag.textContent = scores.compScore;
 
     // end the game if there have been 5 rounds without a tie
-    if (scores.userScore + scores.compScore >= 5) {
+    if (scores.userScore >=5 || scores.compScore >= 5) {
         endGame(scores.userScore, scores.compScore);
         scores.userScore = 0;
         scores.compScore = 0;
