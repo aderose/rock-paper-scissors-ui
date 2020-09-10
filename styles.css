@@ -128,7 +128,7 @@ button:focus {
   color: rgb(96, 178, 255);
 }
 
-.input i:hover {
+.input:hover i {
   color: rgb(0, 132, 255);
 }
 
